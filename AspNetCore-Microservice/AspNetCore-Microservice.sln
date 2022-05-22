@@ -3,9 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{807E3E9C-3A43-4DCD-B14B-2D4DBEF7D52B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Web", "Microservices.Web\Microservices.Web.csproj", "{D672CFEA-720D-4EC4-84B4-4C5B8B2F6460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.ProductAPI", "Microservices.ProductAPI\Microservices.ProductAPI.csproj", "{54AC319D-9867-4B17-8533-B49F8A005BA5}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D672CFEA-720D-4EC4-84B4-4C5B8B2F6460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D672CFEA-720D-4EC4-84B4-4C5B8B2F6460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D672CFEA-720D-4EC4-84B4-4C5B8B2F6460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D672CFEA-720D-4EC4-84B4-4C5B8B2F6460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54AC319D-9867-4B17-8533-B49F8A005BA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54AC319D-9867-4B17-8533-B49F8A005BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54AC319D-9867-4B17-8533-B49F8A005BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54AC319D-9867-4B17-8533-B49F8A005BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D672CFEA-720D-4EC4-84B4-4C5B8B2F6460} = {807E3E9C-3A43-4DCD-B14B-2D4DBEF7D52B}
+		{54AC319D-9867-4B17-8533-B49F8A005BA5} = {807E3E9C-3A43-4DCD-B14B-2D4DBEF7D52B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DEB5AC35-B5B5-47F4-BB77-7CD144DDF533}
