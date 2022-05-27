@@ -1,14 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Microservices.ProductAPI.Models
+namespace Microservices.ProductAPI.Models.Dto
 {
-    public class Product
+    public class ProductDto
     {
-        [Key]
         public int Id { get; set; }
-        [Required]
+        
         public string Name { get; set; }
-        [Range(1, 1000)]
         public double Price { get; set; }
 
         public string Description { get; set; }

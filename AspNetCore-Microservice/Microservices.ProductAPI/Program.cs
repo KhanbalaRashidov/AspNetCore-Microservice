@@ -1,4 +1,7 @@
+using AutoMapper;
+using Microservices.ProductAPI;
 using Microservices.ProductAPI.DbContexts;
+using Microservices.ProductAPI.Repository;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -13,6 +16,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(option =>
 
   option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
+builder.Services.AddSingleton(mapper);
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 
